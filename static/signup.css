@@ -1,0 +1,113 @@
+/* FILEPATH: /static/signup.css */
+body {
+    font-family: 'NanumSquare', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    color:#694914;
+    margin-top: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+label {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+
+#signin {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color:#fdd100;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#signin:hover {
+    background-color:#fdd100;
+}
+
+#back_btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#back_btn:hover {
+    background-color: #555;
+}
+
+#signup {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color:#fdd100;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#back_btn:hover {
+    background-color: #555;
+}
+
+#errorModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+#errorModal .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    text-align: center;
+}
+
+/* Close button */
+#errorModal .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#errorModal .close:hover,
+#errorModal .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

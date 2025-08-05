@@ -1,0 +1,94 @@
+:root{
+    /*font style*/
+    --font-square: 'NanumSquare', san-serif;
+    --font-large: 32px;
+    /* color */
+    --red:  #fdd100;
+    --grey: #EEEEEE;
+    --white : #FFFFFF;
+    --grey-dark : #808080;
+}
+
+body{
+    background-color: var(--red);
+}
+
+#complete{
+    position: absolute;
+    left : 50%;
+    top : 50%;
+    transform: translate(-50%, -50%);
+
+    width:100%;
+    background-color:  #fdd100;;
+    border:none;
+   
+    color:#333;
+    /* padding: 5vw 0; */
+    border-radius: 1vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    /* font-family: 'Recipekorea'; */
+   
+    outline : 0 ;
+    font-size: 2vw;
+    font-family: var(--font-square);
+    font-weight: bold;
+   /*  margin: 15px 35vw; */
+    cursor: pointer;
+}
+
+#name_space{
+    position: absolute;
+    left : 50%;
+    top : 70%;
+    transform: translate(-50%, -50%);
+
+    width:100%;
+    height: 30px;
+    background-color:  #fdd100;;
+    border:none;
+   
+    color:#fff;
+    /* padding: 5vw 0; */
+/*     border-radius: 1vw; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    /* font-family: 'Recipekorea'; */
+   
+    outline : 0 ;
+    font-size: 15pt;
+    font-family: var(--font-square);
+    font-weight: light;
+   /*  margin: 15px 35vw; */
+    cursor: pointer;
+}
+
+#cntsec{
+    position: absolute;
+    left : 50%;
+    top : 80%;
+    transform: translate(-50%, -50%);
+
+    width:100%;
+    height: 30px;
+    font-family: var(--font-square);
+    background-color: #fdd100;
+    border:none;
+   
+    color:#fff;
+    /* padding: 5vw 0; */
+ /*    border-radius: 1vw; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    /* font-family: 'Recipekorea'; */
+   
+    outline : 0 ;
+    font-size: 15pt;
+    font-weight: light;
+   /*  margin: 15px 35vw; */
+    cursor: pointer;
+}

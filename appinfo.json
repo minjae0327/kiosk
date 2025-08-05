@@ -1,0 +1,13 @@
+{
+  "id": "kiosk.app",
+  "version": "1.0.0",
+  "vendor": "My Company",
+  "type": "web",
+  "main": "move.html",
+  "title": "Kiosk",
+  "icon": "icon.png",
+  "requiredPermissions": [
+    "time.query",
+    "activity.operation"
+  ]
+}

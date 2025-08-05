@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인</title>
+    <link rel="stylesheet" href="/static/mobilelogin.css">
+</head>
+<body>
+    <form id="signinForm" method="POST" action="/mobilelogin" enctype="multipart/form-data">
+        <label for="camera">사진:</label>
+        <input type="file" accept="image/*" capture="camera" id="cameraInput" name="cameraInput" required><br><br>
+    </form>
+    
+    <div id="errorModal" class="modal">
+        <div class="modal-content">
+            <h2 id="errorModalMessage"></h2>
+        </div>
+    </div>
+
+    <div id="mypopup" class="popup">
+        <div class="popup-content">
+        </div>
+    </div>
+
+    <div id="notification" class="popup">
+        <div class="popup-content">
+            <span class="close2">&times;</span>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <input id="signinbtn" type="submit" value="로그인">
+        <button id="back_button">돌아가기</button>
+    </div>
+
+    <script src="/static/mobilelogin.js"></script>
+</body>
+</html>

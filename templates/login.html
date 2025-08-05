@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인</title>
+    <link rel="stylesheet" href="/static/login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #camera {
+            width: 100%;
+            max-width: 640px;
+        }
+    </style>
+</head>
+<body>
+    <h1>로그인</h1>
+    <div id="camera"></div>
+    <div id="notification"></div>
+    <div id="buttons"></div>
+
+    <div id='back_button'>
+        <button onclick="goBack()">뒤로가기</button>
+    </div>
+
+    <div id="mypopup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+        </div>
+    </div>
+
+    <script src="/static/login.js"></script>
+</body>
+</html>

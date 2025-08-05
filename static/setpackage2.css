@@ -1,0 +1,35 @@
+:root {
+    /* Font style */
+    --font-square: 'NanumSquare', sans-serif;
+    --font-large: 32px;
+    /* Colors */
+    --red: #FF6347;
+    --grey: #EEEEEE;
+    --white: #FFFFFF;
+    --grey-dark: #808080;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row; /* 버튼을 가로로 배치합니다. */
+    justify-content: center; /* 가로로 중앙 정렬합니다. */
+    align-items: center; /* 세로로 중앙에 정렬합니다. */
+    height: 80vh;
+}
+
+#pack_btn, #eat_btn {
+    background-color: #FF6347;
+    border: none;
+    color: #fff;
+    padding: 170px; /* 버튼의 가로, 세로 크기 설정 */
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    outline: 0;
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 50px; /* 버튼 사이의 간격 설정 */
+}

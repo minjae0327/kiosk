@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiosk</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <link rel="stylesheet" href="/static/kioskWithOption.css">
+    <script>
+        window.baseUrl = "{{ url_for('static', filename='') }}";
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="head_container">
+            <h1 id="title">HCI Cafe</h1>
+        </div>
+        <ul class="menu_tab">
+            <li id="coffee" class="tab-list_trans">커피</li>
+            <li id="ade" class="tab-list_trans">에이드</li>
+            <li id="blended" class="tab-list_trans">블렌디드</li>
+        </ul>
+    </div>
+    <div id="menu_board">
+    <section class="menu_sec">
+        <div class="img_wrap">
+            <img src="{{ url_for('static', filename='src/coffee/hot_americano.png') }}" alt="">
+        </div>
+        <div class="menu_name" id="Hot_A">따뜻한 아메리카노</div>
+        <div class="menu_price" id="HA_P">4000원</div>
+            <div class="menu_options">
+                <!-- 샷 추가 옵션 -->
+                <select class="option_shot">
+                    <option value="shot 1">Shot 1</option>
+                    <option value="shot 2">Shot 2</option>
+                    <option value="shot X">Shot X</option>
+                </select>
+                <!-- 사이즈 옵션 -->
+                <select class="option_size">
+                    <option value="Legular">Legular</option>
+                    <option value="Grande">Gradne</option>
+                </select>
+                <!-- 설탕 추가 옵션 -->
+                <select class="option_sugar">
+                    <option value="sugar Plus">설탕 추가</option>
+                    <option value="no sugar">설탕 추가X</option>
+                </select>
+
+            </div>
+
+        </section>
+
+        <section class="menu_sec">
+            <div class="img_wrap">
+                <img src="{{ url_for('static', filename='src/coffee/ice_americano.png') }}" alt="">
+            </div>
+            <div class="menu_name" id="Ice_A">시원한 아메리카노</div>
+            <div class="menu_price" id="IA_P">4000원</div>
+            <div class="menu_options">
+                <!-- 샷 추가 옵션 -->
+                <select class="option_shot">
+                    <option value="shot 1">Shot 1</option>
+                    <option value="shot 2">Shot 2</option>
+                    <option value="shot X">Shot X</option>
+                </select>
+                <!-- 사이즈 옵션 -->
+                <select class="option_size">
+                    <option value="Legular">Legular</option>
+                    <option value="Grande">Gradne</option>
+                </select>
+                <!-- 설탕 추가 옵션 -->
+                <select class="option_sugar">
+                    <option value="sugar Plus">설탕 추가</option>
+                    <option value="no sugar">설탕 추가X</option>
+                </select>
+
+            </div>
+        </section>
+        <section class="menu_sec">
+            <div class="img_wrap">
+                <img src="{{ url_for('static', filename='src/coffee/hot_latte.png') }}" alt="">
+            </div>
+            <div class="menu_name" id="Hot_L">따뜻한 라떼</div>
+            <div class="menu_price" id="HL_P">5000원</div>
+             <div class="menu_options">
+                <!-- 샷 추가 옵션 -->
+                <select class="option_shot">
+                    <option value="shot 1">Shot 1</option>
+                    <option value="shot 2">Shot 2</option>
+                    <option value="shot X">Shot X</option>
+                </select>
+                <!-- 사이즈 옵션 -->
+                <select class="option_size">
+                    <option value="Legular">Legular</option>
+                    <option value="Grande">Gradne</option>
+                </select>
+                <!-- 설탕 추가 옵션 -->
+                <select class="option_sugar">
+                    <option value="sugar Plus">설탕 추가</option>
+                    <option value="no sugar">설탕 추가X</option>
+                </select>
+
+            </div>
+        </section>
+        <section class="menu_sec">
+            <div class="img_wrap">
+                <img src="{{ url_for('static', filename='src/coffee/ice_latte.png') }}" alt="">
+            </div>
+            <div class="menu_name" id="Ice_L">시원한 라떼</div>
+            <div class="menu_price" id="IL_P">5000원</div>
+            <div class="menu_options">
+                <!-- 샷 추가 옵션 -->
+                <select class="option_shot">
+                    <option value="shot 1">Shot 1</option>
+                    <option value="shot 2">Shot 2</option>
+                    <option value="shot X">Shot X</option>
+                </select>
+                <!-- 사이즈 옵션 -->
+                <select class="option_size">
+                    <option value="Legular">Legular</option>
+                    <option value="Grande">Gradne</option>
+                </select>
+                <!-- 설탕 추가 옵션 -->
+                <select class="option_sugar">
+                    <option value="sugar Plus">설탕 추가</option>
+                    <option value="no sugar">설탕 추가X</option>
+                </select>
+
+            </div>
+        </section>
+        <section class="menu_sec">
+            <div class="img_wrap">
+                <img src="{{ url_for('static', filename='src/coffee/ice_latte.png') }}" alt="">
+            </div>
+            <div class="menu_name" id="Cold_B">콜드 브루</div>
+            <div class="menu_price" id="CB_P">5000원</div>
+             <div class="menu_options">
+                <!-- 샷 추가 옵션 -->
+                <select class="option_shot">
+                    <option value="shot 1">Shot 1</option>
+                    <option value="shot 2">Shot 2</option>
+                    <option value="shot X">Shot X</option>
+                </select>
+                <!-- 사이즈 옵션 -->
+                <select class="option_size">
+                    <option value="Legular">Legular</option>
+                    <option value="Grande">Gradne</option>
+                </select>
+                <!-- 설탕 추가 옵션 -->
+                <select class="option_sugar">
+                    <option value="sugar Plus">설탕 추가</option>
+                    <option value="no sugar">설탕 추가X</option>
+                </select>
+
+            </div>
+
+            </div>
+        </section>
+    </div>
+
+    <div id="footer">
+        <div id="order_board">
+            <section class="order_sec" data-id="1">
+                <!-- <p class="order_menu_name"></p>
+                <p class="order_menu_cnt"></p>
+                <p class="order_menu_price"></p>
+                <button class="click_button" onclick="menu_plus(this)">up</button>
+                <button class="click_button" onclick="menu_down(this)">down</button>
+                <button class="click_button" onclick="menu_remove(this)">remove</button> -->
+            </section>
+            <div id="order_total">
+                <p>전체 메뉴</p>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+        <div id="pay_board">
+            <button id="pay_button"> 결제하기</button>
+        </div>    
+    </div>
+    <div id="myModal2" class="modal2">
+        <div class="modal-content">
+            <span class="close2">&times;</span>
+            <h2>장바구니가 비어있어요</h2>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>어디서 드실건가요?</h2>
+            <button id="packagingButton" onclick="setPackaging(true)">포장할거에요</button>
+            <button id="noPackagingButton" onclick="setPackaging(false)">먹고갈거에요</button>
+        </div>
+    </div>
+    <script src="/static/kioskWithOption.js"></script>
+    
+</body>
+</html>

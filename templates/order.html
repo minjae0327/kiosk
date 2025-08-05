@@ -1,0 +1,67 @@
+<!-- FILEPATH: /Users/kimminjae/Documents/GitHub/HCI/kiosk_app/order.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주문 완료</title>
+    <link rel="stylesheet" href="/static/order.css">
+</head>
+<body>
+    <h1>주문이 완료되었습니다!</h1>
+    
+    <!-- 주문한 커피 목록 표시 -->
+    <div id="order-list">
+        <h2>주문한 커피 목록</h2>
+        <ul id="coffee-list"></ul>
+    </div>
+
+    <!-- 포장 여부 표시 -->
+    <div id="packaging-info">
+        <h2>포장 여부</h2>
+        <p id="packaging-preference"></p>
+    </div>
+
+    <!-- 전체 금액 표시 -->
+    <div id="total-price">
+        <h2>총 금액</h2>
+        <p id="total-price-value"></p>
+    </div>
+    
+    <script>
+        // 주문 정보 가져오기
+        const totalPrice = localStorage.getItem('totalPrice');
+        const packagingPreference = localStorage.getItem('packagingPreference');
+        const orderDetails = JSON.parse(localStorage.getItem('orderDetails'));
+
+        // Debugging: Log the retrieved values
+        console.log('Total Price:', totalPrice);
+        console.log('Packaging Preference:', packagingPreference);
+        console.log('Order Details:', orderDetails);
+
+        // 주문 정보 출력
+        document.getElementById('total-price-value').innerText = `${totalPrice}원`;
+        document.getElementById('packaging-preference').innerText = packagingPreference.toLowerCase() === 'true' ? '포장' : '매장';
+
+        // 주문한 커피 목록 출력
+        const coffeeListContainer = document.getElementById('coffee-list');
+        orderDetails.forEach(order => {
+            const coffeeItem = document.createElement('li');
+    
+            // Check if order.shotAdded is undefined and adjust the output
+            const orderText = typeof order.shotAdded === 'undefined' ? 
+                              `${order.menuName} x ${order.count}` : 
+                              `${order.menuName} x ${order.count} \n ${order.shotAdded} x ${order.size} x ${order.sugarAdded}`;
+    
+            coffeeItem.textContent = orderText;
+            coffeeListContainer.appendChild(coffeeItem);
+        });
+    </script>
+
+    <button id="goto_main" onclick="goToMainPage()">메인화면으로</button>
+    
+    <script src="/static/order.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fdd100;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #333;
+}
+
+#camera {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    margin-top: 20px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    width: 250px;
+}
+
+.popup-content {
+    text-align: center;
+    position: relative; /* 상대적 위치 지정 */
+}
+
+.close {
+    position: absolute; /* 절대적 위치 지정 */
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    padding: 5px 10px; /* 패딩 조정 */
+}
+
+/* close 버튼에 마우스 호버시 스타일 추가 */
+.close:hover {
+    color: #fdd100; /* 글자색 변경 */
+    background-color: #333; /* 배경색 변경 */
+}
+
+.confirm-button {
+    background-color: #fdd100; /* 노란색 */
+}
+
+.deny-button {
+    background-color: #655300; /* 초록색 */
+}
+
+.confirm-button:hover, .deny-button:hover {
+    opacity: 0.8;
+}
+
+#notification {
+    margin-top: 20px;
+}
+
+#buttons {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #655300;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #655300;
+}
+

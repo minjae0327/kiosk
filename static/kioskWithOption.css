@@ -1,0 +1,290 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+:root {
+    /*font style*/
+    --font-square: 'NanumSquare', san-serif;
+    --font-large: 32px;
+    /* color */
+    --red: #fdd100;
+    --grey:#FFFFFF;
+    --white : #FFFFFF;
+    --grey-dark :  #FFFFFF;
+    --black :#333;
+    --brown  : #694914
+}
+
+body {
+    font-family: var(--font-square);
+    font-size: 17px;
+    background-color: var(--grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* 헤더 부분, 제목과 카테고리 선택 탭이 있는 곳  */
+.header {
+    background-color: var(--red);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border-bottom: 1px solid var(--grey-dark); */ /* 경계선 추가 */
+}
+
+
+.head_container > #title {
+    margin: 0;
+}
+
+.menu_tab {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+.tab-list_trans {
+    display: flex;
+    justify-content: space-around;
+  /*   border: 1px solid var(--grey-dark); */
+}
+
+.tab-list_trans:hover {
+    width: 15%;  
+    height:7%; 
+    background-color:  var(--black); /* Change color on hover */
+    color: #fefefe;
+    border-radius: 5px;
+}
+.tab-list_trans:active {
+    width: 15%;  
+    height:7%; 
+    background-color:   var(--black); /* Change color on hover */
+    color: #fefefe;
+    border-radius: 5px;
+}
+
+
+
+/* 메인 부분, 메뉴가 있음  */
+#menu_board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 125%;
+    border-radius: 15px;
+    /* border-bottom: 1px solid var(--grey-dark); */ /* 경계선 추가 */
+}
+
+/* 메뉴 선택 버튼의 위치 조정 */
+.menu_sec {
+    background-color: var(--white);
+    width: 35%; /*40%;*/
+    height: 70%;/*400px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 7px; /* Increase the space between menu sections */
+    
+    border-radius: 20px;
+    border: 10px solid #FFFFFF; /* Add border */
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.img_wrap {
+    background-color: var(--white);
+    width: 150px;
+    height: 150px;
+    font-size: 24px;
+}
+
+.img_wrap > img {
+    width: 150px;
+    object-fit: cover;
+}
+
+.menu_explain {
+    font-size: 10pt;
+}
+/* 옵션 창 */
+
+/* 장바구니 부분과 결제 부분 세팅 */
+#footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start; 
+    margin: 0;
+}
+
+/* 장바구니 부분  */
+#order_board{
+    background-color:#ffffff;
+    width: 100%;
+    margin: 0 0 0 0em; /* 왼쪽 여백 추가 */
+    border: 1px solid #343432; /* 경계선 추가 */
+}
+
+.order_sec {
+    display: flex;
+    background-color:#ffffff;
+    border: 1px solid #333;
+/*     border-radius: 4vw; */
+}
+
+#order_total {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    border-bottom: 1px solid #343432;
+}
+
+/* 결제 부분 */
+#pay_board {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color : #333;
+    background-color: var(--white);
+     /* border-left: 1px solid var(--grey-dark); /* 경계선 추가 */ 
+}
+
+.order_menu_name {
+    flex: 1 0 40%;
+    text-align: center;
+}
+
+.order_menu_cnt {
+    flex: 1 0 20%;
+    text-align: center;
+}
+
+.order_menu_price {
+    flex: 1 0 20%;
+    text-align: center;
+}
+
+.click_button {
+    padding: 0px;
+    border: none;
+    background-color: var(--red);
+    color: #888;
+    cursor: pointer;
+    width: 100%;
+/*     border-radius: 4vw; */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color:   #888;
+}
+
+.modal2 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color:   #888;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid  #888;
+    width: 50%;
+    text-align: center;
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close2 {
+    color:#aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #aaa;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close2:hover,
+.close2:focus {
+    color: #aaa;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#pay_button {
+    writing-mode: horizontal-tb; /* Set the writing mode to horizontal */
+    padding: 50px;
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 10px;
+}
+
+#packagingButton,
+#noPackagingButton {
+    background-color:  var(--red);
+    border: none;
+    color: var(--black);
+    padding: 15px 30px; /* Adjust padding for better proportion */
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    outline: 0;
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 27px; /* Adjust font size */
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px; /* Adjust margin for spacing */
+}
+
+#packagingButton:hover,
+#noPackagingButton:hover {
+    background-color:  #de872d; /* Change color on hover */
+    color: #fefefe;
+}
+
+#packagingButton:active,
+#noPackagingButton:active {
+    background-color:   var(--black); /* Change color on hover */
+    color: #fefefe;
+}

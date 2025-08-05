@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주문 방법을 선택해 주세요.</title>
+    <link rel="stylesheet" href="/static/chooseFastOrder.css">
+</head>
+<body>
+   <h1>주문 방법을 선택해 주세요.<span style="font-size: 40px;"></h1>
+    <div class="find-btn">
+        <button type="button" id="signup_btn" onclick="location.href='/kioskWithOption'">
+			<img src="/static/src/icon/skip.png" alt="Express Order" style="width: 90px; height: 90px;" alt="">
+            <span style="font-size: 24px;">
+			  일반주문</span><br>
+        </button>
+        <button type="button" id="express_btn" onclick="location.href='/kioskNoOption'">
+			<img src="/static/src/icon/stop.png" alt="Express Order" style="width: 90px; height: 90px;" alt="">
+			<span style="font-size: 24px;">
+			  쾌속주문</span><br>        
+		</button>
+    </div>
+	
+    <script src="/static/chooseFastOrder.js"></script>
+</body>
+</html>

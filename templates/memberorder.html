@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인</title>
+    <link rel="stylesheet" href="/static/memberorder.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-logo">
+            <h1 id="title">저번에 주문하셨던 목록이에요</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="table">
+            <!-- table header -->
+            <div class="table-header">
+                <div class="header__item"><a id="name" class="filter__link" href="#">메뉴</a></div>
+                <div class="header__item"><a id="wins" class="filter__link filter__link--number" href="#">상세사항</a></div>
+                <div class="header__item"><a id="draws" class="filter__link filter__link--number" href="#">가격</a></div>
+                <div class="header__item"><a id="total" class="filter__link filter__link--number" href="#">수량</a></div>
+            </div>
+            <!-- table data -->
+            <div class="table-content" id="tableContent">
+                <!-- Dynamic rows will be inserted here -->
+            </div>
+        </div>
+
+        <!-- Packaging and Total Amount -->
+        <div class="package-total-container">
+            <div class="table-row">
+                <div class="table-data" id="packagingInfo"></div>
+                <div class="table-data" id="totalAmount"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <h1>이대로 주문하시겠어요?</h1>
+        <button type="button" id="yes" onclick="confirmOrder()">네</button>
+        <button type="button" id="no" onclick="newOrder()">아니요</button>
+    </div>
+    
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <h2>주문 내역이 없어요</h2>
+            <button type="button" id="no" onclick="newOrder()">주문하러 가기</button>
+        </div>
+    </div>
+
+    <script src="/static/memberorder.js"></script>
+</body>
+</html>

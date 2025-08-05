@@ -1,0 +1,46 @@
+/* FILEPATH: /Users/kimminjae/Documents/GitHub/HCI/kiosk_app/static/order.css */
+body {
+    font-family: 'NanumSquare', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    color: #655300;
+    margin-top: 50px;
+}
+
+#order-list {
+    margin-top: 30px;
+}
+
+h2 {
+    color: #333;
+}
+
+#coffee-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#packaging-info, #total-price {
+    margin-top: 30px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #fdd100;
+    color: #333;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: #655300;
+}
